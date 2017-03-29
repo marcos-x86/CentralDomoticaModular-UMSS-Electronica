@@ -1,3 +1,10 @@
+//
+//CENTRAL DOMOTICA MODULAR
+//UNIVERSIDAD MAYOR DE SAN SIMON
+//FACULTAD DE CIENCIAS Y TECNOLOGIA
+//INGENIERIA ELECTRONICA
+//
+
 import com.fazecast.jSerialComm.*;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
