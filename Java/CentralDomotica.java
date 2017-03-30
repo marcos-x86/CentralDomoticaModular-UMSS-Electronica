@@ -1,10 +1,3 @@
-//
-//CENTRAL DOMOTICA MODULAR
-//UNIVERSIDAD MAYOR DE SAN SIMON
-//FACULTAD DE CIENCIAS Y TECNOLOGIA
-//INGENIERIA ELECTRONICA
-//
-
 import com.fazecast.jSerialComm.*;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
@@ -57,13 +50,15 @@ public class CentralDomotica{
 
     public int contadorPlanificador=0;
     public int quantumPlanificador=0;
-    public int limiteMaximoContadorDesconexion=4;
+    public int limiteMaximoContadorDesconexion=5;
     public int limiteMaximoTemperatura=30;
-    public int limiteMinimoTemperatura=10;
-    public int limiteMaximoHumo=3000;
-    public int limiteMaximoGas=4000;
-    public int limiteMinimoNivelAgua=10;
-    public int limiteMinimoLuz=500;
+    public int limiteMinimoTemperatura=7;
+    public int limiteMaximoHumo=2000;
+    public int limiteMaximoGas=1500;
+    public int limiteMinimoNivelAgua=3;
+    public int limiteMinimoLuz=700;
+    public int largoTanque=33;
+    public int anchoTanque=28;
     public Timer ejecucionTareas;
     public Timer lecturaPuertoSerial;
     public TemporizadorTareas tareasProgramadas;
@@ -147,15 +142,6 @@ public class CentralDomotica{
                 System.out.println("realizare tarea");
                 ejecutarTarea();
             }
-            /*if(datosDisponibles||verificarModificaciones()){
-                System.out.println("Hay "+comandosRecibidos.size()+" comandos nuevos para lectura");
-                for(int i=0;i<comandosRecibidos.size();i++){
-                    System.out.println(comandosRecibidos.get(i));
-                }
-                comandosRecibidos.removeFirst();
-                System.out.println("");
-                datosDisponibles=false;
-            }*/
         }
     }
 
@@ -375,7 +361,7 @@ public class CentralDomotica{
     public void iniciarTemporizadorLecturaDatos(){
         TemporizadorLecturaDatos leerDatosRecibidos=new TemporizadorLecturaDatos();
         Timer lecturaPuertoSerial=new Timer(true);
-        lecturaPuertoSerial.scheduleAtFixedRate(leerDatosRecibidos,0,100);
+        lecturaPuertoSerial.scheduleAtFixedRate(leerDatosRecibidos,0,60);
     }
 
     public void iniciarValoresPorDefecto(){
@@ -525,7 +511,6 @@ public class CentralDomotica{
             if(listaNumerosModulos.size()>0){
                 byte numeroModuloAsignar=listaNumerosModulos.getFirst();
                 byte tipoModuloOrigen=comandoActual.get(2);
-                //modulosRegistrados.add(new Modulo(numeroModuloAsignar,tipoModuloOrigen,(byte)0x01,(byte)0x00,false,true));
                 enviarComandoRegistro(numeroModuloAsignar,((byte)(tipoModuloOrigen-0x20)));
             }
         }
@@ -551,6 +536,7 @@ public class CentralDomotica{
             System.out.println("tipo de modulo: "+tipoModuloOrigen);
             System.out.println("numero de modulo: "+numeroModuloAsignar);
             limpiarTareasModulos();
+            limpiarContadoresDesconexionModulos();
             planificarTareaModulo();
         }
     }
@@ -563,7 +549,7 @@ public class CentralDomotica{
         int nivelAguaModulo=0;
         int luzModulo=0;
         int consumoElectricoModulo=0;
-        long consumoAguaModulo=0;
+        int consumoAguaModulo=0;
         boolean lluviaModulo=false;
         boolean fuegoModulo=false;
         boolean movimientoModulo=false;
@@ -602,8 +588,8 @@ public class CentralDomotica{
                         i+=2;
                         break;
                     case (byte)0x65:
-                        consumoAguaModulo=((comandoActual.get(i+1)&0xFF)<<24|(comandoActual.get(i+2)&0xFF)<<16|(comandoActual.get(i+3)&0xFF)<<8|(comandoActual.get(i+4)&0xFF))&0xFFFFFFFFL;
-                        i+=4;
+                        consumoAguaModulo=((comandoActual.get(i+1)&0xFF)<<8|(comandoActual.get(i+2)&0xFF))&0xFF;
+                        i+=2;
                         break;
                     case (byte)0x66:
                         temperaturaModulo=comandoActual.get(i+1)&0xFF;
@@ -638,8 +624,7 @@ public class CentralDomotica{
                         i+=1;
                         break;
                     case (byte)0x6A:
-                        //nivelAguaModulo=(33*28)*(21-comandoActual.get(i+1)&0xFF);
-                        nivelAguaModulo=comandoActual.get(i+1)&0xFF;
+                        nivelAguaModulo=((largoTanque*anchoTanque)*(21-comandoActual.get(i+1)&0xFF))/1000;
                         i+=1;
                         break;
                     case (byte)0x6B:
@@ -938,8 +923,6 @@ public class CentralDomotica{
     }
 
     public void registrarEstablecimientoSalidasModulo(){
-        /*boolean act1Modulo=false;
-        boolean act2Modulo=false;*/
         byte moduloOrigen=comandoActual.get(0);
         int indiceModuloDetectado=-1;
         for(int i=0;i<modulosRegistrados.size();i++){
@@ -949,19 +932,6 @@ public class CentralDomotica{
             }
         }
         if(indiceModuloDetectado!=-1){
-            /*byte tipoModuloOrigen=modulosRegistrados.get(indiceModuloDetectado).obtenerTipoModulo();
-            if((comandosRecibidos.getFirst().get(2)&0b00000001)==0b00000001){
-                act1Modulo=true;
-            }
-            else{
-                act1Modulo=false;
-            }
-            if((comandosRecibidos.getFirst().get(2)&0b00000010)==0b00000010){
-                act2Modulo=true;
-            }
-            else{
-                act2Modulo=false;
-            }*/
             modulosRegistrados.get(indiceModuloDetectado).establecerControles(true);
             modulosRegistrados.get(indiceModuloDetectado).establecerRespuestaPendiente(false);
             modulosRegistrados.get(indiceModuloDetectado).establecerContadorDesconexion((byte)0x00);
@@ -1187,9 +1157,10 @@ public class CentralDomotica{
                         listaNumerosModulos.add(numeroLibreCocina);
                         listaNumerosModulos.sort(Comparator.naturalOrder());
                         modulosRegistrados.remove(indiceModuloCocina);
-                        iniciarValoresPorDefectoCocina();
                         limpiarModificacionesCocina();
                         limpiarTareasCocina();
+                        iniciarValoresPorDefectoCocina();
+
                         planificarTareaModulo();
                         escribirNotificacion("El modulo cocina se ha desconectado del sistema","alerta");
                     }
@@ -1229,9 +1200,9 @@ public class CentralDomotica{
                         listaNumerosModulos.add(numeroLibreExterior);
                         listaNumerosModulos.sort(Comparator.naturalOrder());
                         modulosRegistrados.remove(indiceModuloExterior);
-                        iniciarValoresPorDefectoExterior();
                         limpiarModificacionesExterior();
                         limpiarTareasExterior();
+                        iniciarValoresPorDefectoExterior();
                         planificarTareaModulo();
                         escribirNotificacion("El modulo exterior se ha desconectado del sistema","alerta");
                     }
@@ -1269,9 +1240,9 @@ public class CentralDomotica{
                         listaNumerosModulos.add(numeroLibreHabitacion);
                         listaNumerosModulos.sort(Comparator.naturalOrder());
                         modulosRegistrados.remove(indiceModuloHabitacion);
-                        iniciarValoresPorDefectoHabitacion();
                         limpiarModificacionesHabitacion();
                         limpiarTareasHabitacion();
+                        iniciarValoresPorDefectoHabitacion();
                         planificarTareaModulo();
                         escribirNotificacion("El modulo habitacion se ha desconectado del sistema","alerta");
                     }
@@ -1296,7 +1267,6 @@ public class CentralDomotica{
                 }
                 break;
         }
-        //listaTareas.removeFirst();
     }
 
     public void limpiarModificacionesCocina(){
@@ -1367,6 +1337,12 @@ public class CentralDomotica{
             modulosRegistrados.get(i).establecerContadorQuantum((byte)0x00);
         }
     }
+    
+    public void limpiarContadoresDesconexionModulos(){
+        for(int i=0;i<modulosRegistrados.size();i++){
+            modulosRegistrados.get(i).establecerContadorDesconexion((byte)0x00);
+        }
+    }
 
     public void planificarTareaModulo(){
         if(modulosRegistrados.size()>0){
@@ -1398,15 +1374,15 @@ public class CentralDomotica{
     }
 
     public int calculoExponencialSensorHumo(int valor){
-        return ((int)(50*Math.exp(0.0172*valor)));
+        return ((int)(30*Math.exp(0.0172*valor)));
     }
 
     public int calculoExponencialSensorGas(int valor){
-        return ((int)(350*Math.exp(0.0153*valor)));
+        return ((int)(300*Math.exp(0.0153*valor)));
     }
 
     public int calculoLogaritmicoSensorLuz(int valor){
-        return ((int)(-1275*Math.log(valor+0.01)+7064.8));
+        return ((int)(-892.3*Math.log(valor+0.01)+4945.4));
     }
 
     public void enviarDatosCoordinador(LinkedList<Byte> datosEnviar){
