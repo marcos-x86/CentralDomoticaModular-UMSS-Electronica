@@ -19,11 +19,11 @@ function cerrarsesion(){
             window.location.href="../index.html" 
         }
         else{
-            alert("Ha ocurrido un error en la respuesta de cerrar sesión al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la respuesta de cerrar sesión al servidor");
         };
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de cerrar sesión al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de cerrar sesión al servidor");
     });
 }
 
@@ -54,7 +54,8 @@ function verificarlogin(){
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de verificar sesión al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de verificar sesión al servidor");
+        window.location.href="../index.html";
     });
 }
 
@@ -121,7 +122,7 @@ function actualizardatos(){
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de actualización de datos al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de actualización de datos al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
 }
@@ -158,7 +159,7 @@ function verificarmodulos(){
         actualizardatos();
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de verificar módulos al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de verificar módulos al servidor");
         actualizardatos();
     });
 }
@@ -208,12 +209,12 @@ function modificaract1(){
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
         else{
-            alert("Ha ocurrido un error en la respuesta de modificar el estado del actuador 1 al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la respuesta de modificar el estado del actuador 1 al servidor");
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de modificar el estado del actuador 1 al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de modificar el estado del actuador 1 al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
 }
@@ -263,12 +264,12 @@ function modificaract2(){
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
         else{
-            alert("Ha ocurrido un error en la respuesta de modificar el estado del actuador 2 al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la respuesta de modificar el estado del actuador 2 al servidor");
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de modificar el estado del actuador 2 al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de modificar el estado del actuador 2 al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
 }
@@ -297,12 +298,12 @@ function modomanual(){
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
         else{
-            alert("Ha ocurrido un error en la respuesta de modificar el modo de operación manual al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la respuesta de modificar el modo de operación manual al servidor");
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de modificar el modo de operación manual al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de modificar el modo de operación manual al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
 }
@@ -331,12 +332,12 @@ function modosemi(){
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
         else{
-            alert("Ha ocurrido un error en la respuesta de modificar el modo de operación semiautomático al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la respuesta de modificar el modo de operación semiautomático al servidor");
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de modificar el modo de operación semiautomático al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de modificar el modo de operación semiautomático al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
 }
@@ -365,13 +366,30 @@ function modoarmado(){
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
         else{
-            alert("Ha ocurrido un error en la respuesta de modificar el modo de operación armado al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la respuesta de modificar el modo de operación armado al servidor");
             temporizador=setTimeout(verificarmodulos,tiempoeventos);
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de modificar el modo de operación armado al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de modificar el modo de operación armado al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
+    });
+}
+
+function mostrarNotificacion(texto){
+    $.notify({
+        icon: 'fa fa-ban',
+        message: texto
+        },{
+            animate:{
+                enter: 'animated fadeInRight',
+                exit: 'animated fadeOutRight'
+            },
+            type: "danger",
+            placement: {
+                from: "bottom",
+                align: "right"
+            }
     });
 }
 

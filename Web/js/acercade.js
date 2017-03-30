@@ -19,11 +19,11 @@ function cerrarsesion(){
             window.location.href="../index.html" 
         }
         else{
-            alert("Ha ocurrido un error en la petición de cerrar sesión al servidor");
+            mostrarNotificacion("Ha ocurrido un error en la petición de cerrar sesión al servidor");
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de cerrar sesión al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de cerrar sesión al servidor");
     });
 }
 
@@ -49,7 +49,8 @@ function verificarlogin(){
         }
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de verificar sesión al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de verificar sesión al servidor");
+        window.location.href="../index.html";
     });
 }
 
@@ -84,8 +85,25 @@ function verificarmodulos(){
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
     });
     solicitud.fail(function (jqXHR, textStatus, errorThrown){
-        alert("Ha ocurrido un error en la petición de verificar módulos al servidor");
+        mostrarNotificacion("Ha ocurrido un error en la petición de verificar módulos al servidor");
         temporizador=setTimeout(verificarmodulos,tiempoeventos);
+    });
+}
+
+function mostrarNotificacion(texto){
+    $.notify({
+        icon: 'fa fa-ban',
+        message: texto
+        },{
+            animate:{
+                enter: 'animated fadeInRight',
+                exit: 'animated fadeOutRight'
+            },
+            type: "danger",
+            placement: {
+                from: "bottom",
+                align: "right"
+            }
     });
 }
 
