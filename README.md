@@ -7,13 +7,13 @@ Prototipo de un sistema de control domótico modular centralizado usando hardwar
 Librerias
 ---------
 Para compilar y ejecutar los diferentes codigos fuente del sistema se requieren las siguientes librerias:
-[EmonLib](https://github.com/openenergymonitor/EmonLib)
-[DHT](https://github.com/adafruit/DHT-sensor-library)
-[LinkedList](https://github.com/ivanseidel/LinkedList)
-[XBee](https://github.com/andrewrapp/xbee-arduino)
-[jSerialComm](http://fazecast.github.io/jSerialComm/)
-[MongoDB PHP Driver](https://github.com/mongodb/mongo-php-driver)
-[MongoDB Java Driver](https://github.com/mongodb/mongo-java-driver)
+[EmonLib](https://github.com/openenergymonitor/EmonLib),
+[DHT](https://github.com/adafruit/DHT-sensor-library),
+[LinkedList](https://github.com/ivanseidel/LinkedList),
+[XBee](https://github.com/andrewrapp/xbee-arduino),
+[jSerialComm](http://fazecast.github.io/jSerialComm/),
+[MongoDB PHP Driver](https://github.com/mongodb/mongo-php-driver),
+[MongoDB Java Driver](https://github.com/mongodb/mongo-java-driver).
 
 Informacion de desarrollo
 -------------------------
