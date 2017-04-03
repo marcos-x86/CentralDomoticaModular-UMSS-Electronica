@@ -1,7 +1,18 @@
-var solicitud;
-var temporizador;
-var tiempoeventos=2250;
+//UNIVERSIDAD MAYOR DE SAN SIMON
+//FACULTAD DE CIENCIAS Y TECNOLOGIA
+//CARRERA DE INGENIERIA ELECTRONICA
+//
+//SISTEMA DOMOTICO MODULAR CENTRALIZADO DESARROLLADO POR:
+//
+//LARA TORRICO MARCOS
+//TORREZ JORGE BRIAN
 
+//Variables globales del script
+var solicitud; //Variable usada para manipular las solicitudes Ajax
+var temporizador; //Variable empleada para programar eventos Jquery
+var tiempoeventos=2250; //Tiempo de frecuencia para solicitudes Ajax (en milisegundos)
+
+//Funcion que cierra la sesion del usuario
 function cerrarsesion(){
     clearTimeout(temporizador);
     if (solicitud){
@@ -16,7 +27,7 @@ function cerrarsesion(){
     });
     solicitud.done(function (respuesta, textStatus, jqXHR){
         if (respuesta.cerrado){
-            window.location.href="../index.html" 
+            window.location.href="../index.html"
         }
         else{
             mostrarNotificacion("Ha ocurrido un error en la petición de cerrar sesión al servidor");
@@ -27,6 +38,9 @@ function cerrarsesion(){
     });
 }
 
+//Funcion que actualiza periodicamente las notificaciones del sistema, el numero
+//de notificaciones mostradas se toma como parametro desde el elemento con identificador
+//numeronotificaciones
 function actualizarnotificaciones(){
     if (solicitud){
         solicitud.abort();
@@ -48,6 +62,8 @@ function actualizarnotificaciones(){
     });
 }
 
+//Funcion que verifica si el usuario ha iniciado correctamente la sesion
+//Caso contrario es redireccionado a la pagina de inicio de sesion
 function verificarlogin(){
     $('#modulo1').hide();
     $('#modulo2').hide();
@@ -74,6 +90,8 @@ function verificarlogin(){
     });
 }
 
+//Funcion que verifica cuales de los modulos se encuentran conectados y remueve de la interfaz los que se encuentren
+//sin conexion
 function verificarmodulos(){
     if (solicitud){
         solicitud.abort();
@@ -110,6 +128,7 @@ function verificarmodulos(){
     });
 }
 
+//Funcion que despliega notificaciones emergentes en la interfaz, recibe como parametro cualquier texto
 function mostrarNotificacion(texto){
     $.notify({
         icon: 'fa fa-ban',
@@ -127,6 +146,9 @@ function mostrarNotificacion(texto){
     });
 }
 
+//Se establecen acciones para los botones de la interfaz a traves de sus identificadores
+//mediante sentencias JQuery, que se ejecutaran cuando ocurran eventos de click
 $("#cerrarsesion").click(cerrarsesion);
 
+//Ejecuta el script de verificar login inmediatamente despues de que se haya terminado de cargar la pagina
 $(document).ready(verificarlogin);

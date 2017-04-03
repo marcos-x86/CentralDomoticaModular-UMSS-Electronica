@@ -1,4 +1,17 @@
+//UNIVERSIDAD MAYOR DE SAN SIMON
+//FACULTAD DE CIENCIAS Y TECNOLOGIA
+//CARRERA DE INGENIERIA ELECTRONICA
+//
+//SISTEMA DOMOTICO MODULAR CENTRALIZADO DESARROLLADO POR:
+//
+//LARA TORRICO MARCOS
+//TORREZ JORGE BRIAN
+
+//Importacion de librerias externas
+
+//Libreria para la comunicacion a traves del puerto serial
 import com.fazecast.jSerialComm.*;
+//Liberias del cliente para operaciones CRUD en MongoDB
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
@@ -6,6 +19,7 @@ import static com.mongodb.client.model.Filters.eq;
 import org.bson.conversions.Bson;
 import org.bson.types.ObjectId;
 import org.bson.Document;
+//Librerias de java para manejo de fechas, estructuras de datos, y temporizadores
 import java.util.Date;
 import java.util.List;
 import java.util.Timer;
@@ -13,8 +27,10 @@ import java.util.TimerTask;
 import java.util.LinkedList;
 import java.util.Comparator;
 
+//Clase principal de la central domotica
 public class CentralDomotica{
 
+    //Variables que almacenan las referencias a las diferentes bases de datos del sistema domotico
     public MongoClient clienteMongo=new MongoClient("localhost",27017);
     public MongoDatabase baseDatosComandosAlarmas=clienteMongo.getDatabase("comandosalarmas");
     public MongoDatabase baseDatosComandosCocina=clienteMongo.getDatabase("comandoscocina");
@@ -30,6 +46,7 @@ public class CentralDomotica{
     public MongoDatabase baseDatosNotificaciones=clienteMongo.getDatabase("notificaciones");
     public MongoDatabase baseDatosUsuarios=clienteMongo.getDatabase("usuarios");
 
+    //Variables que almacenan las referencias a las colecciones de las bases de datos del sistema domotico
     public MongoCollection coleccionComandoEstadoAlarma=baseDatosComandosAlarmas.getCollection("estadoalarma");
     public MongoCollection coleccionComandoActuadoresCocina=baseDatosComandosCocina.getCollection("actuadorescocina");
     public MongoCollection coleccionComandoActuadoresExterior=baseDatosComandosExterior.getCollection("actuadoresexterior");
@@ -48,8 +65,11 @@ public class CentralDomotica{
     public MongoCollection coleccionNotificaciones=baseDatosNotificaciones.getCollection("notificacionesemergentes");
     public MongoCollection coleccionUsuariosAutorizados=baseDatosUsuarios.getCollection("usuariosautorizados");
 
+    //Variables auxiliares que emplea el planificador de tareas
     public int contadorPlanificador=0;
     public int quantumPlanificador=0;
+
+    //Variables que controlan los niveles maximos y minimos para el control de algunas variables fisicas detectadas por los sensores
     public int limiteMaximoContadorDesconexion=5;
     public int limiteMaximoTemperatura=30;
     public int limiteMinimoTemperatura=7;
@@ -59,20 +79,70 @@ public class CentralDomotica{
     public int limiteMinimoLuz=700;
     public int largoTanque=33;
     public int anchoTanque=28;
+
+    //Variables que parametrizan e inicializan los temporizadores
     public Timer ejecucionTareas;
     public Timer lecturaPuertoSerial;
     public TemporizadorTareas tareasProgramadas;
     public TemporizadorLecturaDatos leerDatosRecibidos;
+
+    //Variables de las estructuras de datos usadas por el sistema
     public LinkedList<Modulo> modulosRegistrados=new LinkedList<Modulo>();
     public LinkedList<Tarea> listaTareas=new LinkedList<Tarea>();
     public LinkedList<Byte> listaModificaciones=new LinkedList<Byte>();
     public LinkedList<Byte> listaNumerosModulos=new LinkedList<Byte>();
     public LinkedList<Byte> comandoActual=new LinkedList<Byte>();
     public LinkedList<String> tipoMensaje=new LinkedList<String>();
+
+    //Variables usadas para la comunicacion por el puerto serie
     public volatile SerialPort arduinoSerial;
     public volatile byte datosLeidos[];
     public volatile LinkedList<LinkedList<Byte>> comandosRecibidos=new LinkedList<LinkedList<Byte>>();
 
+    //=========================================================================
+    //Codigos (en bytes) de comando del subprotocolo de comunicacion M2M del sistema
+    //
+    //REGISTRAR_MODULO: 0x41
+    //ENVIAR_CONFIGURACION: 0x42
+    //OBTENER_DATOS: 0x43
+    //ESTABLECER_SALIDAS: 0x44
+    //MODIFICAR_FUNCIONES: 0x45
+    //ESTADO_ALARMA: 0x46
+    //ENVIO_SMS: 0x47
+    //CODIGO_ERROR: 0x48
+    //=========================================================================
+
+    //=========================================================================
+    //Codigos (en bytes) de los tipos de modificacione para lista de modificaciones
+    //
+    //
+    //modificacion estado alarma: 0x00
+    //
+    //modificacion actuadores cocina: 0x01
+    //modificacion actuadores exterior: 0x02
+    //modificacion actuadores habitacion: 0x03
+    //
+    //modificacion modo operacion cocina: 0x04
+    //modificacion modo operacion exterior: 0x05
+    //modificacion modo operacion habitacion: 0x06
+    //=========================================================================
+
+    //=========================================================================
+    //Codigos (en bytes) de los tipos de tareas manejados por el programador de tareas
+    //enviar estado actuadores cocina: 0x00
+    //enviar estado actuadores exterior: 0x01
+    //enviar estado actuadores habitacion: 0x02
+    //
+    //enviar estado alarma: 0x03
+    //enviar mensaje alerta: 0x04
+    //
+    //solicitar datos modulo cocina: 0x05
+    //solicitar datos modulo exterior: 0x06
+    //solicitar datos modulo habilitacion: 0x07
+    //=========================================================================
+
+
+    //Creacion de instancia de la clase principal para ejecutar el programa
     public static void main (String args[]){
         try{
             CentralDomotica backend=new CentralDomotica();
@@ -83,10 +153,13 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que ejecuta el programa principal e inicializa los temporizadores
     public void correrPrograma(){
+        //Creacion de la instancia de la clase SerialPort para la manipulacion de puertos seriales
         SerialPort[] listaPuertosSeriales=SerialPort.getCommPorts();
         boolean puertoEncontrado=false;
         int numeroPuertoIdentificado=0;
+        //Deteccion del puerto serial
         for(SerialPort puertoActual : listaPuertosSeriales){
             if(puertoActual.getSystemPortName().equals("ttyUSB0")){
                 puertoEncontrado=true;
@@ -97,7 +170,9 @@ public class CentralDomotica{
             }
         }
         if(puertoEncontrado){
+            //Inicio de comunicacion a traves del puerto serie
             arduinoSerial=listaPuertosSeriales[numeroPuertoIdentificado];
+            //Configuracion de los parametros del puerto serie
             arduinoSerial.setComPortParameters(19200,8,arduinoSerial.ONE_STOP_BIT,arduinoSerial.NO_PARITY);
             if(arduinoSerial.openPort()){
                 System.out.println("Conexion establecida");
@@ -108,9 +183,9 @@ public class CentralDomotica{
                 iniciarTemporizadorLecturaDatos();
                 System.out.println("inicie temporizador lectura datos");
                 escribirNotificacion("La central domotica se ha iniciado correctamente","info");
-                
+
                 Thread.currentThread().suspend();
-                
+
             }
             else{
                 System.out.println("Conexion no establecida");
@@ -123,6 +198,7 @@ public class CentralDomotica{
         }
     }
 
+    //Clase interna que hereda de la clase TimerTask. esta implementa el programador de tareas
     public class TemporizadorTareas extends TimerTask{
         public TemporizadorTareas(){
             super();
@@ -145,6 +221,7 @@ public class CentralDomotica{
         }
     }
 
+    //Clase interna que hereda de la clase TimerTask. esta se encarga exclusivamente de la recepcion y almacenamiento de datos
     public class TemporizadorLecturaDatos extends TimerTask{
         public TemporizadorLecturaDatos(){
             super();
@@ -164,7 +241,9 @@ public class CentralDomotica{
         }
     }
 
+    //Clase interna que agrupa los atributos y funciones de un modulo recolector de datos
     public class Modulo{
+        //Atributos comunes de un modulo recolector de datos
         byte numeroModuloAsignado=0x00;
         byte tipoModulo=0x00;
         byte modoOperacion=0x00;
@@ -181,6 +260,7 @@ public class CentralDomotica{
         boolean alarmaLuz=false;
         boolean alarmaLluvia=false;
 
+        //Constructor parametrizado de la clase Modulo
         public Modulo(byte numero,byte tipo,byte modo,boolean pendiente,boolean control){
             numeroModuloAsignado=numero;
             tipoModulo=tipo;
@@ -310,26 +390,32 @@ public class CentralDomotica{
         }
     }
 
+    //Clase interna que agrupa los atributos comunes de una tarea a desarrollarse en el sistema
     public class Tarea{
+        //Atributos comunes de una tarea en el sistema
         byte codigoTarea=0x00;
         byte valorNumericoPrincipal=0x00;
         boolean valorLogicoPrincipal=false;
         boolean valorLogicoSecundario=false;
 
+        //Constructor principal de la clase tarea
         public Tarea(byte codigo){
             codigoTarea=codigo;
         }
 
+        //Constructor sobrecargado de la clase tarea
         public Tarea(byte codigo,byte valorNumerico){
             codigoTarea=codigo;
             valorNumericoPrincipal=valorNumerico;
         }
 
+        //Constructor sobrecargado de la clase tarea
         public Tarea(byte codigo,boolean valorPrincipal){
             codigoTarea=codigo;
             valorLogicoPrincipal=valorPrincipal;
         }
 
+        //Constructor sobrecargado de la clase tarea
         public Tarea(byte codigo,boolean valorPrincipal,boolean valorSecundario){
             codigoTarea=codigo;
             valorLogicoPrincipal=valorPrincipal;
@@ -352,18 +438,21 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que inicia el temporizador del programador de tareas
     public void iniciarTemporizadorTareas(){
         TemporizadorTareas tareasProgramadas=new TemporizadorTareas();
         Timer ejecucionTareas=new Timer(true);
         ejecucionTareas.scheduleAtFixedRate(tareasProgramadas,10,300);
     }
 
+    //Metodo de inicia el temporizador de lectura y almacenamiento de datos
     public void iniciarTemporizadorLecturaDatos(){
         TemporizadorLecturaDatos leerDatosRecibidos=new TemporizadorLecturaDatos();
         Timer lecturaPuertoSerial=new Timer(true);
         lecturaPuertoSerial.scheduleAtFixedRate(leerDatosRecibidos,0,60);
     }
 
+    //Metodo que inicia los valores por defecto en el sistema y la base de datos
     public void iniciarValoresPorDefecto(){
         listaNumerosModulos.add((byte)0x31);
         listaNumerosModulos.add((byte)0x32);
@@ -410,6 +499,7 @@ public class CentralDomotica{
         restablecerInicioSesion();
     }
 
+    //Metodo que inicia los valores por defecto en la base de datos del modulo cocina
     public void iniciarValoresPorDefectoCocina(){
         restablecerModificacionComandoActCocinaBD();
         establecerEstadoComandoAct1CocinaBD(false);
@@ -420,6 +510,7 @@ public class CentralDomotica{
         establecerActivacionModuloCocinaDB(false);
     }
 
+    //Metodo que inicia los valores por defecto en la base de datos del modulo exterior
     public void iniciarValoresPorDefectoExterior(){
         restablecerModificacionComandoActExteriorBD();
         establecerEstadoComandoAct1ExteriorBD(false);
@@ -430,6 +521,7 @@ public class CentralDomotica{
         establecerActivacionModuloExteriorDB(false);
     }
 
+    //Metodo que inicia los valores por defecto en la base de datos del modulo habitacion
     public void iniciarValoresPorDefectoHabitacion(){
         restablecerModificacionComandoActHabitacionBD();
         establecerEstadoComandoAct1HabitacionBD(false);
@@ -440,6 +532,8 @@ public class CentralDomotica{
         establecerActivacionModuloHabitacionDB(false);
     }
 
+    //Metodo que verifica las modificaciones realizadas a traves de la aplicacion web o movil
+    //y las adiciona a la lista de tareas a pendientes del programador de tareas
     public boolean verificarModificaciones(){
         boolean respuesta=false;
         if(obtenerModificacionComandoAlarmaBD()){
@@ -480,6 +574,7 @@ public class CentralDomotica{
         return respuesta;
     }
 
+    //Metodo que interpreta un comando recibido desde el modulo coordinador o un modulo de adquisicion de datos
     public void interpretarComando(){
         comandoActual=comandosRecibidos.pollFirst();
         if(comandoActual.size()>1){
@@ -504,6 +599,7 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que realiza el registro de un nuevo modulo recolector de datos al sistema
     public void registrarModulo(){
         byte moduloOrigen=comandoActual.get(0);
         if(moduloOrigen==((byte)0x30)){
@@ -541,6 +637,7 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que registra nuevos datos provenientes de un modulo de adquisicion de datos
     public void registrarDatosModulo(){
         int temperaturaModulo=0;
         int humedadModulo=0;
@@ -653,6 +750,9 @@ public class CentralDomotica{
                         break;
                 }
             }
+            //Procedimiento que establece los nuevos datos en la base de datos segun  el tipo de modulo de adquisicion de datos
+            //adicionalmente se controlan los valores de acuerdo a los limites establecidos y los modos de operacion del modulo
+            //desencadenando notificaciones o acciones especificas de cada modulo
             switch(tipoModuloOrigen){
                 case (byte)0x21:
                     establecerNuevosDatosHabitacionDB(temperaturaModulo,humedadModulo,movimientoModulo,magneticoModulo,humoModulo,act1Modulo,act2Modulo,estadoControlesModulo);
@@ -922,6 +1022,7 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que registra la respuesta al comando de establecimiento de salidas enviado por un modulo de adquisicion de datos
     public void registrarEstablecimientoSalidasModulo(){
         byte moduloOrigen=comandoActual.get(0);
         int indiceModuloDetectado=-1;
@@ -939,6 +1040,7 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que registra la respuesta al comando de establecimiento de alarma enviado por el modulo coordinador
     public void registrarEstablecimientoEstadoAlarma(){
         if(comandoActual.get(2)==(byte)0xFF){
             establecerEstadoAlarmaCoordinadorBD(true);
@@ -951,11 +1053,13 @@ public class CentralDomotica{
         establecerHabilitacionAlarmaCoordinadorBD(true);
     }
 
+    //Metodo que registra la respuesta al comando de envio de SMS enviado por el modulo coordinador
     public void registrarEstablecimientoEnvioSMS(){
         String nuevoMensaje="Se ha enviado el siguiente SMS al administrador: "+tipoMensaje.get((int)(comandoActual.get(2))&0xFF);
         escribirNotificacion(nuevoMensaje,"info");
     }
 
+    //Metodo que interpreta las modificaciones generadas desde la aplicacion web y movil para ser adicionadas como tareas en el programador de tareas
     public void interpretarModificaciones(){
         byte modificacion=listaModificaciones.pollFirst();
         switch(modificacion){
@@ -1077,6 +1181,7 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que ejecuta una tarea de la lista de tareas controlada por el programador de tareas
     public void ejecutarTarea(){
         Tarea tareaAtendida=listaTareas.pollFirst();
         byte tareaActual=tareaAtendida.obtenerCodigoTarea();
@@ -1269,6 +1374,7 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia las modificaciones generadas de la lista de modificaciones para el modulo cocina
     public void limpiarModificacionesCocina(){
         for(int i=0;i<listaModificaciones.size();i++){
             if(((listaModificaciones.get(i))==(byte)0x01)||((listaModificaciones.get(i))==(byte)0x04)){
@@ -1278,6 +1384,7 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia las tareas generadas de la lista de tareas para el modulo cocina
     public void limpiarTareasCocina(){
       for(int i=0;i<listaTareas.size();i++){
           if(((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x00)||((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x05)){
@@ -1287,6 +1394,7 @@ public class CentralDomotica{
       }
     }
 
+    //Limpia las modificaciones generadas de la lista de modificaciones para el modulo exterior
     public void limpiarModificacionesExterior(){
         for(int i=0;i<listaModificaciones.size();i++){
             if(((listaModificaciones.get(i))==(byte)0x02)||((listaModificaciones.get(i))==(byte)0x05)){
@@ -1296,6 +1404,7 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia las tareas generadas de la lista de tareas para el modulo exterior
     public void limpiarTareasExterior(){
         for(int i=0;i<listaTareas.size();i++){
             if(((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x01)||((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x06)){
@@ -1305,6 +1414,7 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia las modificaciones generadas de la lista de modificaciones para el modulo habitacion
     public void limpiarModificacionesHabitacion(){
         for(int i=0;i<listaModificaciones.size();i++){
             if(((listaModificaciones.get(i))==(byte)0x03)||((listaModificaciones.get(i))==(byte)0x06)){
@@ -1314,6 +1424,7 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia las tareas generadas de la lista de tareas para el modulo habitacion
     public void limpiarTareasHabitacion(){
         for(int i=0;i<listaTareas.size();i++){
             if(((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x02)||((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x07)){
@@ -1323,6 +1434,7 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia las tareas relacionadas a cualquier modulo de la lista de tareas pendientes
     public void limpiarTareasModulos(){
         for(int i=0;i<listaTareas.size();i++){
             if(((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x05)||((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x06)||((listaTareas.get(i).obtenerCodigoTarea())==(byte)0x07)){
@@ -1332,18 +1444,21 @@ public class CentralDomotica{
         }
     }
 
+    //Limpia el quantum de los objetos de tipo modulo contenido en la lista de modulos registrados
     public void limpiarQuantumsModulos(){
         for(int i=0;i<modulosRegistrados.size();i++){
             modulosRegistrados.get(i).establecerContadorQuantum((byte)0x00);
         }
     }
-    
+
+    //Limpia el contador de desconexion de los objetos de tipo modulo contenido en la lista de modulos registrados
     public void limpiarContadoresDesconexionModulos(){
         for(int i=0;i<modulosRegistrados.size();i++){
             modulosRegistrados.get(i).establecerContadorDesconexion((byte)0x00);
         }
     }
 
+    //Planifica las tareas de solicitud de datos nuevos acuerdo a la cantidad y tipos de modulos registrados
     public void planificarTareaModulo(){
         if(modulosRegistrados.size()>0){
             quantumPlanificador=6/(modulosRegistrados.size());
@@ -1369,22 +1484,27 @@ public class CentralDomotica{
         }
     }
 
+    //Mapea un valor entero de una regresion lineal dada a otra propuesta en los parametros
     public int mapearValorEntero(int numero,int entradaMinimo,int entradaMaximo,int salidaMinimo,int salidaMaximo){
         return ((numero-entradaMinimo)*(salidaMaximo-salidaMinimo)/(entradaMaximo-entradaMinimo)+salidaMinimo);
     }
 
+    //Calcula el valor correspondiente a la unidad fisica ppm desde una lectura de voltaje analogico para el sensor de humo
     public int calculoExponencialSensorHumo(int valor){
         return ((int)(30*Math.exp(0.0172*valor)));
     }
 
+    //Calcula el valor correspondiente a la unidad fisica ppm desde una lectura de voltaje analogico para el sensor de gas
     public int calculoExponencialSensorGas(int valor){
         return ((int)(300*Math.exp(0.0153*valor)));
     }
 
+    //Calcula el valor correspondiente a la unidad fisica lux desde una lectura de voltaje analogico para el sensor de intensidad luminica
     public int calculoLogaritmicoSensorLuz(int valor){
         return ((int)(-892.3*Math.log(valor+0.01)+4945.4));
     }
 
+    //Metodo que envia datos al modulo coordinador a traves del puerto serie, a partir de una lista enlazada
     public void enviarDatosCoordinador(LinkedList<Byte> datosEnviar){
         byte datosEnviarArreglo[]=new byte[datosEnviar.size()];
         for(int i=0;i<datosEnviar.size();i++){
@@ -1393,36 +1513,43 @@ public class CentralDomotica{
         arduinoSerial.writeBytes(datosEnviarArreglo,datosEnviarArreglo.length);
     }
 
+    //Sobrecarga del metodo que envia datos al modulo coordinador a traves del puerto serie, a partir den arreglo de bytes
     public void enviarDatosCoordinador(byte datosEnviar[]){
         arduinoSerial.writeBytes(datosEnviar,datosEnviar.length);
     }
 
+    //Metodo que envia el comando de registro a un numero de modulo determinado
     public void enviarComandoRegistro(byte numeroAsignado,byte numeroModulo){
         byte comandoRegistro[]=new byte[]{0x30,0x41,(byte)numeroAsignado,(byte)numeroModulo};
         enviarDatosCoordinador(comandoRegistro);
     }
 
+    //Metodo que envia el comando de envio de configuracion a un numero de modulo determinado
     public void enviarComandoEnviarConfiguracion(byte numeroModulo){
         byte comandoEnvioConfiguracion[]=new byte[]{0x30,0x42,(byte)numeroModulo};
         enviarDatosCoordinador(comandoEnvioConfiguracion);
     }
 
+    //Metodo que envia el comando de obtencion de datos a un numero de modulo determinado
     public void enviarComandoObtenerDatos(byte numeroModulo){
         byte comandoDatos[]=new byte[]{0x30,0x43,(byte)numeroModulo};
         enviarDatosCoordinador(comandoDatos);
     }
 
+    //Metodo que envia el comando de establecimiento de salidas a un numero de modulo determinado
     public void enviarComandoEstablecerSalidas(byte estados,byte numeroModulo){
         byte comandoSalidas[]=new byte[]{0x30,0x44,(byte)estados,(byte)numeroModulo};
         enviarDatosCoordinador(comandoSalidas);
     }
 
+    //Sobrecarga del metodo de envio de comando de establecimiento de salidas a un numero determinado, a partir de parametros booleanos
     public void enviarComandoEstablecerSalidas(boolean actuador1Estado,boolean actuador2Estado,byte numeroModulo){
         byte estado=(byte)((byte)(((byte)(actuador2Estado?1:0))<<1)|((byte)(actuador1Estado?1:0)));
         byte comandoSalidas[]=new byte[]{0x30,0x44,(byte)estado,(byte)numeroModulo};
         enviarDatosCoordinador(comandoSalidas);
     }
 
+    //Metodo que envia el comando de modificacion de funciones un numero de modulo determinado
     public void enviarComandoModificarFunciones(byte funciones[],byte numeroModulo){
         byte comandoFunciones[]=new byte[funciones.length+3];
         comandoFunciones[0]=0x30;
@@ -1434,6 +1561,7 @@ public class CentralDomotica{
         enviarDatosCoordinador(comandoFunciones);
     }
 
+    //Metodo que envia el comando de cambio de estado de la alarma sonora al modulo coordinador
     public void enviarComandoEstadoAlarmaCoordinador(boolean estado){
         if(estado){
             byte comandoEncendido[]=new byte[]{0x30,0x46,(byte)0xFF};
@@ -1445,11 +1573,16 @@ public class CentralDomotica{
         }
     }
 
+    //Metodo que envia el comando de mensaje de emergenia al modulo coordinador
     public void enviarComandoMensajeAlarmaCoordinador(byte tipo){
         byte comandoMensaje[]=new byte[]{0x30,0x47,(byte)tipo};
         enviarDatosCoordinador(comandoMensaje);
     }
 
+    //
+    //Metodos que realizan consultas y modificaciones a las bases de datos
+    //del sistema domotico
+    //
     public boolean obtenerModificacionComandoAlarmaBD(){
         List<Document> documento=(List<Document>)coleccionComandoEstadoAlarma.find().limit(1).into(new LinkedList<Document>());
         boolean respuesta=documento.get(0).getBoolean("modificado");

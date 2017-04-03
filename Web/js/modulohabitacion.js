@@ -1,9 +1,18 @@
-//Variables globales del script
-var solicitud;
-var temporizador;
-var tiempoeventos=2250;
+//UNIVERSIDAD MAYOR DE SAN SIMON
+//FACULTAD DE CIENCIAS Y TECNOLOGIA
+//CARRERA DE INGENIERIA ELECTRONICA
+//
+//SISTEMA DOMOTICO MODULAR CENTRALIZADO DESARROLLADO POR:
+//
+//LARA TORRICO MARCOS
+//TORREZ JORGE BRIAN
 
-//Funcion que cierra la sesion del usuario y valida el logout
+//Variables globales del script
+var solicitud; //Variable usada para manipular las solicitudes Ajax
+var temporizador; //Variable empleada para programar eventos Jquery
+var tiempoeventos=2250; //Tiempo de frecuencia para solicitudes Ajax (en milisegundos)
+
+//Funcion que cierra la sesion del usuario
 function cerrarsesion(){
     clearTimeout(temporizador);
     if (solicitud){
@@ -18,7 +27,7 @@ function cerrarsesion(){
     });
     solicitud.done(function (respuesta, textStatus, jqXHR){
         if (respuesta.cerrado){
-            window.location.href="../index.html" 
+            window.location.href="../index.html"
         }
         else{
             mostrarNotificacion("Ha ocurrido un error en la respuesta de cerrar sesión al servidor");
@@ -29,7 +38,7 @@ function cerrarsesion(){
     });
 }
 
-//Verifica si el usuario ha iniciado correctamente la sesion
+//Funcion que verifica si el usuario ha iniciado correctamente la sesion
 //Caso contrario es redireccionado a la pagina de inicio de sesion
 function verificarlogin(){
     $('#modulo1').hide();
@@ -62,8 +71,8 @@ function verificarlogin(){
     });
 }
 
-//Funcion que actualiza los datos de la interfaz del modulo con los mas recientes registrados
-//por el sistema domotico
+//Funcion que actualiza los datos de la interfaz del modulo con los datos mas
+//recientes registrados por el sistema domotico a traves del modulo habitacion
 function actualizardatos(){
     if (solicitud){
         solicitud.abort();
@@ -132,8 +141,8 @@ function actualizardatos(){
     });
 }
 
-//Verifica que modulos se encuentran conectados y quita de la interfaz los que se encuentren
-//sin conexion, si el modulo actual se desconectase el usuario es redireccionado a la pagina principal
+//Funcion que verifica cuales de los modulos se encuentran conectados y remueve de la interfaz los que se encuentren
+//sin conexion, si el modulo habitacion se desconectase el usuario es redireccionado a la pagina principal
 function verificarmodulos(){
     if (solicitud){
         solicitud.abort();
@@ -171,7 +180,7 @@ function verificarmodulos(){
     });
 }
 
-//Realiza una peticion POST para modificar el estado del actuador 1 en el modulo actual
+//Funcion que realiza una peticion POST para modificar el estado del actuador 1 en el modulo habitacion
 function modificaract1(){
     clearTimeout(temporizador);
     var datoestado=null;
@@ -227,7 +236,7 @@ function modificaract1(){
     });
 }
 
-//Realiza una peticion POST para modificar el estado del actuador 2 en el modulo actual
+//Realiza una peticion POST para modificar el estado del actuador 2 en el modulo habitacion
 function modificaract2(){
     clearTimeout(temporizador);
     var datoestado=null;
@@ -283,7 +292,7 @@ function modificaract2(){
     });
 }
 
-//Realiza una peticion POST para que el modulo entre al modo de operacion manual
+//Realiza una peticion POST para que el modulo habitacion entre al modo de operacion manual
 function modomanual(){
     clearTimeout(temporizador);
     var datoestado=null;
@@ -318,7 +327,7 @@ function modomanual(){
     });
 }
 
-//Realiza una peticion POST para que el modulo entre al modo de operacion semiautomatico
+//Realiza una peticion POST para que el modulo habitacion entre al modo de operacion semiautomatico
 function modosemi(){
     clearTimeout(temporizador);
     var datoestado=null;
@@ -353,7 +362,7 @@ function modosemi(){
     });
 }
 
-//Realiza una peticion POST para que el modulo entre al modo de operacion armado
+//Realiza una peticion POST para que el modulo habitacion entre al modo de operacion armado
 function modoarmado(){
     clearTimeout(temporizador);
     var datoestado=null;
@@ -388,6 +397,7 @@ function modoarmado(){
     });
 }
 
+//Funcion que despliega notificaciones emergentes en la interfaz, recibe como parametro cualquier texto
 function mostrarNotificacion(texto){
     $.notify({
         icon: 'fa fa-ban',
@@ -405,7 +415,8 @@ function mostrarNotificacion(texto){
     });
 }
 
-//Mediante JQuery se establecen las funciones que se ejecutaran cuando ocurran determinados eventos
+//Se establecen acciones para los botones de la interfaz a traves de sus identificadores
+//mediante sentencias JQuery, que se ejecutaran cuando ocurran eventos de click
 $("#cerrarsesion").click(cerrarsesion);
 $("#mod1actuador1btn").click(modificaract1);
 $("#mod1actuador2btn").click(modificaract2);
@@ -413,5 +424,5 @@ $("#mod1btnmanual").click(modomanual);
 $("#mod1btnsemi").click(modosemi);
 $("#mod1btnarmado").click(modoarmado);
 
-//Ejecuta el primer script una vez que se haya terminado de cargar la pagina
+//Ejecuta el script de verificar login inmediatamente despues de que se haya terminado de cargar la pagina
 $(document).ready(verificarlogin);

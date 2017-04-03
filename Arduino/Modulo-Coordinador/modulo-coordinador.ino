@@ -1,3 +1,12 @@
+//UNIVERSIDAD MAYOR DE SAN SIMON
+//FACULTAD DE CIENCIAS Y TECNOLOGIA
+//CARRERA DE INGENIERIA ELECTRONICA
+//
+//SISTEMA DOMOTICO MODULAR CENTRALIZADO DESARROLLADO POR:
+//
+//LARA TORRICO MARCOS
+//TORREZ JORGE BRIAN
+
 #include <XBee.h>             //Libreria de los modulos XBee
 #include <SoftwareSerial.h>   //Libreria para la habilitación de puertos seriales por software
 #include <LinkedList.h>       //Libreria que implementa la estructura de datos Lista Enlazada
@@ -35,7 +44,7 @@ LinkedList<short> direccionesDestinoModulos;  //Instancia de la clase Energy Mon
 
 //Metodo de configuracion para el modulo
 void setup(){
-  //Configuracion de entradas y salidas digitales
+  //Configuracion de entradas y salidas digitales a traves de los registros del ATmega328p
   DDRB=B11110111;
   DDRC=B11111111;
   DDRD=B11110110;

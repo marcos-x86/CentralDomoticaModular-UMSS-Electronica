@@ -1,3 +1,12 @@
+//UNIVERSIDAD MAYOR DE SAN SIMON
+//FACULTAD DE CIENCIAS Y TECNOLOGIA
+//CARRERA DE INGENIERIA ELECTRONICA
+//
+//SISTEMA DOMOTICO MODULAR CENTRALIZADO DESARROLLADO POR:
+//
+//LARA TORRICO MARCOS
+//TORREZ JORGE BRIAN
+
 #include <DHT.h>          //Libreria del sensor de temperatura DHT11
 #include <EmonLib.h>      //Libreria de OpenEnergy para el sensor de corriente electrica
 #include <LinkedList.h>   //Libreria que implementa la estructura de datos Lista Enlazada
@@ -85,7 +94,7 @@ DHT sensorTempHum(PIN_SENSOR_TEMPERATURA_HUMEDAD, DHT11);
 
 //Metodo de configuracion para el modulo
 void setup(){
-  DDRB=B11111011;     //configuracion de entradas/salidas a traves de los registro del ATmega328
+  DDRB=B11111011;     //configuracion de entradas/salidas a traves de los registro del ATmega328p
   DDRC=B00000111;
   DDRD=B00100010;
   PORTB|=B00011000;
@@ -140,7 +149,7 @@ void recibirDatosXbee(){
     }
     analizarComando();
     bufferDatosXbee.~LinkedList<byte>();
-  } 
+  }
 }
 
 //Metodo que manda solicitudes de registro al modulo coordinador
@@ -193,6 +202,7 @@ void registrarModulo(){
   }
 }
 
+//Metodo que envia la respuesta a una solicitud de registro al modulo coordinador
 void enviarRegistro(){
   bufferTramaDatos=LinkedList<byte>();
   bufferTramaDatos.add(TIPO_MODULO);
@@ -293,6 +303,7 @@ void establecerSalidas(){
   enviarEstablecimientoSalidas();
 }
 
+//Metodo que envia el estado de las salidas controladas
 void enviarEstablecimientoSalidas(){
   bufferTramaDatos=LinkedList<byte>();
   bufferTramaDatos.add((byte)salidasControladas);
@@ -314,6 +325,7 @@ void modificarFunciones(){
   enviarModificacionFunciones();
 }
 
+//Metodo que envia las funciones activadas actualmente en el modulo
 void enviarModificacionFunciones(){
   bufferTramaDatos=LinkedList<byte>();
   for(int i=0;i<numeroFuncionesActivadasModulo;i++){
