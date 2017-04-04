@@ -2,418 +2,49 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/marcos/Development/Android/Android-SDK/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_e0e08ff665c7f76bab48f8889e002b1fa4e9a0aa\classes.dex" />
+        revision="23.0.3"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0_9aa316c66d71b255fa468f373173d522f5f98707.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="be8be3271ce2f61d1c035c839d55448fa48be9bf">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_670ba655f3690984d979b2bd9bf34a0b20684b77\classes.dex" />
+        revision="23.0.3"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/pre-dexed/debug/com.android.support-design-22.2.0_9899daabdbf91e3321965f802548db37970a4466.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_e5cbe2539b710b3f6559fb532b7fe5448bb203af\classes.dex" />
+        revision="23.0.3"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.0_58730b7661385eccf4707b0d3542c1b5c622da13.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_f4608a2145a3b24260132f6b16ead21cb7b54101\classes.dex" />
+        revision="23.0.3"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.0_4421a9cab3318657e71e219d766f6a963dcd5ffc.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_0727247452a883fa2cf25fe4c748be2a31ce0f54\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_3051b164e28169fdea41b98f6422c107c74e7acc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a725324d28d95c866e796e3fe6e8cd9ee9271e2">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7cda42bc6791432ff767f4004a7c3d341bc23839\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_c67074a360d9d7cf26c182bc37316e8b2999ea08\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b28efdc21a9e15bf6d697def71484fe9c56bacba">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6143f3a47294f478bf160c46b995970067389f5f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_983402cb877a55c16d1143766f60a74eb184e8cd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_161c5d8be11f3621bedeb24bf8d7959c5eb0d14d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_9a663b41994dac3f820afb2813686f91f6fb9386\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_f836a570d20cbbd19083dc24becd27156b56e15e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_abc9a09d7fd59cc083177267ea3c4fe68d350fa8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bca4b1437d4954af0d3470fabcc36a4ec3cdcf50">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ade5ed9bc9ccf91d0683f06f002fd331be9772bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_3e581194cd9f1d9e1b3a17dd4682dacc2b95d1b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_d980e07a425980d28a51a8395e938e7c7c3b5785\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_1b1cbffe9c4799a27d89966bfe53033c1937f23e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_a5317155d42f48d4749f1db1db45a192e32be9fa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_a961e34c3e393fa3e8f82041be7ad23414e2f1c9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_af2de8043fec89fab686bc280f07c1807b020d22\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_3ad3ea291748ee2f9dc2562131c41d67b040da39\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_2a08c9b919ab7ab893ff4158bae6ab7e374d87e7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="002e7edde01c052f0d74280c75435c2649a9ce95">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_58eef8a60cc04ace10affb75f3ab65863abd3ab0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_438ac14e1739969d009afce3798b9ba3039a8712\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_f376697447724e3d40d7d0faa9aa47fef1a791ac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fadf602b8468857e618cdf04de9e3a5280ecfd11">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d02103c537f0de9d1ab53abe20010db102412907\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_1d29dfc8dbe3cad0e1ef374bf2e4608c38d2609d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_3c1b8ff2742b4ce0e938d116e14f9ab8e637de79\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_65ba95ed02021b5e2ab3da6b9cd3d0fd8f4466e6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_7fd3af592f04c8a8d9d5d3dac02d5af42ea21d7c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_83b9ad7f2e7a93fbcd6bf5d5d2b86637edfe12bd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_72a0120c2689b8ac3e3de8ee592d574e8b96f579\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_ae607bebf158e25e7ff482fe1c56b29c549285d3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_2dc3cfb9e0fe818cab7782c2631979dc417e23f7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_cb600842fbeaa6d0ca93e4eb3a00454056b79017\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_f1f3ac3461390d0d15793ab704e505c27704880a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_45f897fa7c33777202bee7e2f0ca950e6d39c45a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_c7c393a6ed289d1518d2da5e07d70f60bf5055e1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_957eda8d408c428b315d4482a15e8616a1f47670\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_b94d3542404706b84aa4d5f91b7be1bc0a35a49f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_61552eda5db6c4665160a7f55f131a9cbc9e32fd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_60a049dd575e34d4f13ab871c041415b62b708db\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\AndroidCentralDomotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_2c75398d37fc5635ec2f67874116f2c122f0c874\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domotica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_f8b713438c103da571db75327da51f36f3c248a4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\BRIANITA\Documents\ejemplosandroid\Domoticaweb\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_664ebc5cd33f368cddd060307b98186d2e70536a\classes.dex" />
+        revision="23.0.3"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/home/marcos/Development/Android/CentralDomoticaModular/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0_238ca67e78988485802c7ce1706aab4127b900fa.jar" />
     </item>
 
 </items>

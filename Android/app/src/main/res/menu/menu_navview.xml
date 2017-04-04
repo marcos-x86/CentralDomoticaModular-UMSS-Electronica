@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_inicio"
+            android:title="Inicio"
+            android:icon="@android:drawable/ic_menu_sort_by_size" />
+        <item
+            android:id="@+id/menu_notificaciones"
+            android:title="Notificaciones"
+            android:icon="@android:drawable/ic_menu_info_details" />
+        <item
+            android:id="@+id/menu_habitacion"
+            android:title="Modulo habitación"
+            android:icon="@android:drawable/ic_menu_send" />
+        <item
+            android:id="@+id/menu_cocina"
+            android:title="Modulo cocina"
+            android:icon="@android:drawable/ic_menu_send" />
+        <item
+            android:id="@+id/menu_exterior"
+            android:title="Modulo exterior"
+            android:icon="@android:drawable/ic_menu_send" />
+        <item
+            android:id="@+id/menu_alarmas"
+            android:title="Alarmas"
+            android:icon="@android:drawable/ic_lock_idle_alarm" />
+        <item
+            android:id="@+id/menu_camara1"
+            android:title="Cámara 1"
+            android:icon="@android:drawable/ic_menu_view" />
+        <item
+            android:id="@+id/menu_camara2"
+            android:title="Cámara 2"
+            android:icon="@android:drawable/ic_menu_view" />
+        <item
+            android:id="@+id/menu_acercade"
+            android:title="Acerca de..."
+            android:icon="@android:drawable/ic_menu_help" />
+    </group>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actividad_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.prometheus.marcos.centraldomoticamodular.ActividadPrincipal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/house"
+        android:layout_above="@+id/textViewUsuario"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:layout_height="100dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextContrasena" />
+
+    <TextView
+        android:text="Contraseña:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextContrasena"
+        android:layout_alignLeft="@+id/editTextContrasena"
+        android:layout_alignStart="@+id/editTextContrasena"
+        android:id="@+id/textViewContrasena" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/textViewContrasena"
+        android:layout_alignRight="@+id/editTextContrasena"
+        android:layout_alignEnd="@+id/editTextContrasena"
+        android:id="@+id/editTextUsuario" />
+
+    <TextView
+        android:text="Usuario:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUsuario"
+        android:layout_alignLeft="@+id/editTextUsuario"
+        android:layout_alignStart="@+id/editTextUsuario"
+        android:id="@+id/textViewUsuario" />
+
+    <Button
+        android:text="iniciar sesión"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonInicioSesion"
+        android:layout_below="@+id/editTextContrasena"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
