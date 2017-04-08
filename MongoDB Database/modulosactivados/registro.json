@@ -1,0 +1,6 @@
+{ 
+    "_id" : ObjectId("589c0eb101a5250504745cde"), 
+    "modulococina" : false, 
+    "modulohabitacion" : false, 
+    "moduloexterior" : false
+}

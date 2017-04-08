@@ -1,0 +1,12 @@
+{ 
+    "_id" : ObjectId("5899e94801a5251c48d9d5d8"), 
+    "temperatura" : NumberInt(22), 
+    "humedad" : NumberInt(32), 
+    "gas" : NumberInt(367), 
+    "humo" : NumberInt(152), 
+    "fuego" : false, 
+    "actuador1" : true, 
+    "actuador2" : false, 
+    "fecha" : ISODate("2017-02-09T03:40:10.833+0000"), 
+    "controles" : true
+}

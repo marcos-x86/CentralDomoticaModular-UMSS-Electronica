@@ -1,0 +1,1 @@
+Estructura de la base de datos importable desde administradores de bases de datos MongoDB, como Studio 3T.

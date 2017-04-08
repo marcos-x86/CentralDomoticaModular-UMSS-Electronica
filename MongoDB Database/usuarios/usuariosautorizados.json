@@ -1,0 +1,6 @@
+{ 
+    "_id" : ObjectId("5899e67201a5251c48d9d5d1"), 
+    "nombreusuario" : "admin", 
+    "contrasena" : "central", 
+    "sesion" : true
+}

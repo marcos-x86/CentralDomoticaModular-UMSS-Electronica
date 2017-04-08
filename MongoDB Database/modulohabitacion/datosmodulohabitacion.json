@@ -1,0 +1,12 @@
+{ 
+    "_id" : ObjectId("58a50a4501a52524f8d3d408"), 
+    "temperatura" : NumberInt(20), 
+    "humedad" : NumberInt(32), 
+    "movimiento" : true, 
+    "magnetico" : false, 
+    "humo" : NumberInt(120), 
+    "actuador1" : false, 
+    "actuador2" : true, 
+    "fecha" : ISODate("2017-02-15T03:36:19.000+0000"), 
+    "controles" : true
+}

@@ -1,0 +1,5 @@
+{ 
+    "_id" : ObjectId("58bc2cc401a5251fe83c7c7d"), 
+    "encendida" : false, 
+    "habilitado" : true
+}

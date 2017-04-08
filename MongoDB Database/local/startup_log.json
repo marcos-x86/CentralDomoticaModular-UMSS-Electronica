@@ -1,0 +1,1566 @@
+{ 
+    "_id" : "PERSEUS-1486397682391", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T16:14:42.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 12:14:42.391", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(1672), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486397766621", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T16:16:06.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 12:16:06.622", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(1708), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486398837347", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T16:33:57.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 12:33:57.347", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(1345), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486399142547", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T16:39:02.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 12:39:02.547", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(1479), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486399627293", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T16:47:07.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 12:47:07.294", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(780), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486399952244", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T16:52:32.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 12:52:32.244", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(810), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486401830442", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T17:23:50.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 13:23:50.442", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(763), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486402032434", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T17:27:12.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 13:27:12.434", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(834), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486423385305", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T23:23:05.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 19:23:05.305", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(863), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486425448264", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-06T23:57:28.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 19:57:28.264", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(868), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486432814191", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-07T02:00:14.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 22:00:14.191", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(881), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486433060198", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-07T02:04:20.000+0000"), 
+    "startTimeLocal" : "Mon Feb  6 22:04:20.198", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(895), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486482152827", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-07T15:42:32.000+0000"), 
+    "startTimeLocal" : "Tue Feb  7 11:42:32.827", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(701), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486617146987", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-09T05:12:26.000+0000"), 
+    "startTimeLocal" : "Thu Feb  9 01:12:26.987", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(842), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486618570464", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-09T05:36:10.000+0000"), 
+    "startTimeLocal" : "Thu Feb  9 01:36:10.464", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(803), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486622564461", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-09T06:42:44.000+0000"), 
+    "startTimeLocal" : "Thu Feb  9 02:42:44.461", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(832), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486679425053", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-09T22:30:25.000+0000"), 
+    "startTimeLocal" : "Thu Feb  9 18:30:25.053", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(694), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486857967939", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-12T00:06:07.000+0000"), 
+    "startTimeLocal" : "Sat Feb 11 20:06:07.940", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(718), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1486875901116", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-12T05:05:01.000+0000"), 
+    "startTimeLocal" : "Sun Feb 12 01:05:01.116", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(736), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487004847619", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-13T16:54:07.000+0000"), 
+    "startTimeLocal" : "Mon Feb 13 12:54:07.619", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(608), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487048243740", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-14T04:57:23.000+0000"), 
+    "startTimeLocal" : "Tue Feb 14 00:57:23.740", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(804), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487087510365", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-14T15:51:50.000+0000"), 
+    "startTimeLocal" : "Tue Feb 14 11:51:50.365", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(822), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487226413107", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-16T06:26:53.000+0000"), 
+    "startTimeLocal" : "Thu Feb 16 02:26:53.107", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(739), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487774925279", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-22T14:48:45.000+0000"), 
+    "startTimeLocal" : "Wed Feb 22 10:48:45.279", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(796), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487776598727", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-22T15:16:38.000+0000"), 
+    "startTimeLocal" : "Wed Feb 22 11:16:38.727", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(618), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487776703346", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-22T15:18:23.000+0000"), 
+    "startTimeLocal" : "Wed Feb 22 11:18:23.347", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(824), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487779600580", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-22T16:06:40.000+0000"), 
+    "startTimeLocal" : "Wed Feb 22 12:06:40.580", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(700), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487793068434", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-22T19:51:08.000+0000"), 
+    "startTimeLocal" : "Wed Feb 22 15:51:08.434", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(806), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487867222477", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-23T16:27:02.000+0000"), 
+    "startTimeLocal" : "Thu Feb 23 12:27:02.477", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(794), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487945980338", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-24T14:19:40.000+0000"), 
+    "startTimeLocal" : "Fri Feb 24 10:19:40.338", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(900), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487953132514", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-24T16:18:52.000+0000"), 
+    "startTimeLocal" : "Fri Feb 24 12:18:52.514", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(818), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1487961489492", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-24T18:38:09.000+0000"), 
+    "startTimeLocal" : "Fri Feb 24 14:38:09.492", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(810), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488240499527", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-28T00:08:19.000+0000"), 
+    "startTimeLocal" : "Mon Feb 27 20:08:19.527", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(680), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488250409310", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-28T02:53:29.000+0000"), 
+    "startTimeLocal" : "Mon Feb 27 22:53:29.310", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(696), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488252286147", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-28T03:24:46.000+0000"), 
+    "startTimeLocal" : "Mon Feb 27 23:24:46.147", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(806), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488324471262", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-28T23:27:51.000+0000"), 
+    "startTimeLocal" : "Tue Feb 28 19:27:51.262", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(795), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488325678086", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-02-28T23:47:58.000+0000"), 
+    "startTimeLocal" : "Tue Feb 28 19:47:58.086", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(624), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488328745379", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-01T00:39:05.000+0000"), 
+    "startTimeLocal" : "Tue Feb 28 20:39:05.379", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(766), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488726844095", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-05T15:14:04.000+0000"), 
+    "startTimeLocal" : "Sun Mar  5 11:14:04.095", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(556), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1488766387800", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-06T02:13:07.000+0000"), 
+    "startTimeLocal" : "Sun Mar  5 22:13:07.800", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(815), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1489464169836", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-14T04:02:49.000+0000"), 
+    "startTimeLocal" : "Tue Mar 14 00:02:49.836", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(697), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1489466808741", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-14T04:46:48.000+0000"), 
+    "startTimeLocal" : "Tue Mar 14 00:46:48.741", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(680), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490168984865", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T07:49:44.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 03:49:44.865", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(593), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490171363383", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T08:29:23.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 04:29:23.383", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(595), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490171541864", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T08:32:21.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 04:32:21.864", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(608), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490171785606", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T08:36:25.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 04:36:25.606", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(731), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490172355570", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T08:45:55.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 04:45:55.570", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(706), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490173315134", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T09:01:55.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 05:01:55.134", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(689), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490173970779", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-22T09:12:50.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 05:12:50.779", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(583), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490232274631", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-23T01:24:34.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 21:24:34.631", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(594), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490233302234", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-23T01:41:42.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 21:41:42.234", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(587), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490233794677", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-23T01:49:54.000+0000"), 
+    "startTimeLocal" : "Wed Mar 22 21:49:54.677", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(611), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490250381606", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-23T06:26:21.000+0000"), 
+    "startTimeLocal" : "Thu Mar 23 02:26:21.606", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(785), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}
+{ 
+    "_id" : "PERSEUS-1490287516142", 
+    "hostname" : "PERSEUS", 
+    "startTime" : ISODate("2017-03-23T16:45:16.000+0000"), 
+    "startTimeLocal" : "Thu Mar 23 12:45:16.142", 
+    "cmdLine" : {
+
+    }, 
+    "pid" : NumberLong(634), 
+    "buildinfo" : {
+        "version" : "2.6.10", 
+        "gitVersion" : "nogitversion", 
+        "OpenSSLVersion" : "OpenSSL 1.0.2g  1 Mar 2016", 
+        "sysInfo" : "Linux kishi10 3.2.0-84-highbank #121-Ubuntu SMP PREEMPT Tue May 5 19:44:15 UTC 2015 armv7l BOOST_LIB_VERSION=1_58", 
+        "loaderFlags" : "-fPIC -pthread -Wl,-z,now -rdynamic", 
+        "compilerFlags" : "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unused-function -Wno-unused-variable -Wno-maybe-uninitialized -Wno-unknown-pragmas -Winvalid-pch -pipe -Werror -O3 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+        "allocator" : "tcmalloc", 
+        "versionArray" : [
+            NumberInt(2), 
+            NumberInt(6), 
+            NumberInt(10), 
+            NumberInt(0)
+        ], 
+        "javascriptEngine" : "V8", 
+        "bits" : NumberInt(32), 
+        "debug" : false, 
+        "maxBsonObjectSize" : NumberInt(16777216)
+    }
+}

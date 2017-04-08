@@ -1,0 +1,13 @@
+{ 
+    "_id" : ObjectId("58a5436601a52524f8d3d40e"), 
+    "lluvia" : false, 
+    "nivelagua" : NumberInt(201), 
+    "movimiento" : true, 
+    "luz" : NumberInt(12), 
+    "consumoelectrico" : NumberInt(10), 
+    "consumoagua" : NumberInt(30), 
+    "actuador1" : true, 
+    "actuador2" : true, 
+    "fecha" : ISODate("2017-02-16T03:38:27.449+0000"), 
+    "controles" : true
+}
