@@ -171,7 +171,7 @@ void solicitarRegistroModulo(){
     enviarDatosXbee(direccionDestinoModuloCoordinador,REGISTRAR_MODULO);
     do{
       recibirDatosXbee();
-    }while(!((millis()-inicioTiempoConexion)>tiempoReconexion));
+    }while((!((millis()-inicioTiempoConexion)>tiempoReconexion))&&(!moduloRegistrado));
   }while(!moduloRegistrado);
 }
 

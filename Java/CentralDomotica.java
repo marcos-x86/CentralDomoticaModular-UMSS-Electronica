@@ -183,7 +183,7 @@ public class CentralDomotica{
                 iniciarTemporizadorLecturaDatos();
                 System.out.println("inicie temporizador lectura datos");
                 escribirNotificacion("La central domotica se ha iniciado correctamente","info");
-
+                //Suspende el Thread principal dejando continuar la ejecucion de los 2 timers iniciados
                 Thread.currentThread().suspend();
 
             }
@@ -442,14 +442,14 @@ public class CentralDomotica{
     public void iniciarTemporizadorTareas(){
         TemporizadorTareas tareasProgramadas=new TemporizadorTareas();
         Timer ejecucionTareas=new Timer(true);
-        ejecucionTareas.scheduleAtFixedRate(tareasProgramadas,10,300);
+        ejecucionTareas.scheduleAtFixedRate(tareasProgramadas,5,300);
     }
 
     //Metodo de inicia el temporizador de lectura y almacenamiento de datos
     public void iniciarTemporizadorLecturaDatos(){
         TemporizadorLecturaDatos leerDatosRecibidos=new TemporizadorLecturaDatos();
         Timer lecturaPuertoSerial=new Timer(true);
-        lecturaPuertoSerial.scheduleAtFixedRate(leerDatosRecibidos,0,60);
+        lecturaPuertoSerial.scheduleAtFixedRate(leerDatosRecibidos,0,80);
     }
 
     //Metodo que inicia los valores por defecto en el sistema y la base de datos
@@ -604,6 +604,8 @@ public class CentralDomotica{
         byte moduloOrigen=comandoActual.get(0);
         if(moduloOrigen==((byte)0x30)){
             System.out.println("registrare nuevo modulo");
+            limpiarTareasModulos();
+            limpiarContadoresDesconexionModulos();
             if(listaNumerosModulos.size()>0){
                 byte numeroModuloAsignar=listaNumerosModulos.getFirst();
                 byte tipoModuloOrigen=comandoActual.get(2);
@@ -612,6 +614,8 @@ public class CentralDomotica{
         }
         else{
             System.out.println("confirmare registro nuevo modulo");
+            limpiarTareasModulos();
+            limpiarContadoresDesconexionModulos();
             byte numeroModuloAsignar=listaNumerosModulos.pollFirst();
             byte tipoModuloOrigen=comandoActual.get(2);
             modulosRegistrados.add(new Modulo(numeroModuloAsignar,tipoModuloOrigen,(byte)0x01,false,true));
@@ -631,8 +635,6 @@ public class CentralDomotica{
             }
             System.out.println("tipo de modulo: "+tipoModuloOrigen);
             System.out.println("numero de modulo: "+numeroModuloAsignar);
-            limpiarTareasModulos();
-            limpiarContadoresDesconexionModulos();
             planificarTareaModulo();
         }
     }
